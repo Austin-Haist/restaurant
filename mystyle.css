@@ -1,0 +1,70 @@
+Body{
+    font-family: arial;
+    background-color: beige;
+}
+
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*headers*/
+.menu-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* dishes section */
+
+.month-dish-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.dishes-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+.dish-item{
+    border: 1px solid black;
+    padding: 20px;
+}
+/*menu*/
+table,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+}
+th{
+    background-color: rgb(16, 142, 66);
+}
+    .highlight{
+        font-weight: lighter;
+}
+.details-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    background-color: #222222;
+    color: white;
+    padding: 12px;
+}
