@@ -25,18 +25,38 @@ a{
     margin-right: 20px;
 }
 
+@media (max-width: 768px) {
+    nav{
+        display:none;
+    }
+}
 /* dishes section */
 
 .month-dish-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
+
+@media (max-width: 768px) {
+    .month-dish-container{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+}
+
+
 .dishes-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
+}
+@media (max-width: 768px) {
+    .dishes-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 .dish-item{
     border: 1px solid black;
